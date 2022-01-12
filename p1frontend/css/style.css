@@ -1,0 +1,169 @@
+body {
+    background: linear-gradient(221deg, #084298, transparent);
+}
+/* css for login page */
+#login {
+    background: aqua;
+    padding: 40px 0 5px 40px;
+    font-size: 20px;
+    color: #0059ff;
+}
+p#error-message-username {
+    color: red;
+    margin-bottom: 5px;
+}
+p#error-message-pass {
+    color: red;
+    margin-bottom: 5px;
+}
+p#message-error {
+    color: red;
+    margin-bottom: 5px;
+}
+
+h1#login-header {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    background: white;
+    margin-bottom: 0px;
+    color: green;
+    padding: 15px 0px;
+    margin-top: 30px;
+    opacity: 0.8;
+    text-shadow: 5px 0 0 darkseagreen;
+}
+
+/* css for reimbursementpage */
+form#reimbursement {
+    margin: 0 0 20px 20px;
+}
+h1#reimbursement-header {
+    text-align: center;
+    margin-bottom: 5%;
+    background: radial-gradient(#0a22ca, transparent);
+    color: white;
+    box-shadow: 5px 7px 5px snow;
+}
+.col-sm-3.sidebar {
+    display: inline-block;
+    border: 2px solid bisque;
+}
+.row.reimb-row {
+    background: white;
+}
+.container.menu-part {
+    padding: 15px 0 5px 0;
+    background: rebeccapurple;
+}
+.col-sm-12.content-part {
+    display: inherit;
+}
+#reimbursement {
+    margin: 1em 4em;
+}
+.right-content-part {
+    background: radial-gradient(#23a10c, transparent);
+}
+
+.error-message{
+    border: 1px solid red;
+    box-shadow: 1px 1px 5px red;
+}
+p.requiredValidation {
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
+p.session-error {
+    background: linear-gradient(
+121deg, #0d6efd, transparent);
+    text-align: center;
+    color: red;
+}
+button#submit-reimbursement {
+    height: 3em;
+    width: 15em;
+    background: linear-gradient(
+359deg, #0a58ca, transparent);
+    border: none;
+    box-shadow: 4px 3px 15px rebeccapurple;
+}
+#submit-button-section {
+    margin: 3em 14em;
+}
+p.success-message {
+    background: linear-gradient(
+157deg, rgb(13 110 253 / 25%), transparent);
+    padding: 5px 5px;
+    text-align: center;
+    color: brown;
+    box-shadow: 3px 3px 14px black;
+}
+#user-details {
+    margin: 0 50px;
+    border: 1px solid #0dcaf0;
+    background: linear-gradient(
+45deg, rgb(13 110 253 / 25%), transparent);
+    padding: 3px 5em;
+}
+ul.dropdown-menu.show {
+    margin: 3px -5em;
+    padding: 6px 25px;
+}
+ul.main-nav>li {
+    margin: 0 1em;
+}
+a.navbar-brand {
+    background: linear-gradient(
+132deg, rgb(13 110 253 / 66%), transparent);
+    padding: 10px 3em;
+    box-shadow: 2px 5px 4px #084298;
+}
+
+/* styling for manager dashboard starts here */
+p#requestStatus {
+    color: #0dcaf0;
+    background: linear-gradient(45deg, #04192e, transparent);
+    text-align: center;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 3px #5150bf54;
+    margin: 1em 10em 1em 10em;
+    padding: 9px 6px;
+    box-shadow: 6px 6px 4px #2d61ad;
+}
+
+button#submitManagerBtn {
+    width: 10em;
+    height: 3em;
+    background: linear-gradient(45deg, rebeccapurple, transparent);
+    border: none;
+    box-shadow: 6px -6px 10px white;
+    margin: 1em 25em;
+}
+.right-content-part-manager {
+    background: radial-gradient(#0d6efd, transparent);
+}
+table#table-design {
+   
+    background: linear-gradient(45deg, #0d6efd, transparent);
+    margin-top: 2em;
+}
+div#formInfo {
+    margin-left: 2em;
+}
+select#statusCheck {
+    height: 3em;
+}
+/* custom css on bootstrap elements */
+button.list-group-item.list-group-item-action {
+    background: radial-gradient(black, transparent);
+    color: white;
+}
+.list-group {
+    background: #dc3545;
+    text-align: center;
+}
+button {
+    margin: 0 5px;
+}

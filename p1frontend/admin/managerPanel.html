@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container menu-part">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ERMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+              </div>
+              <div class="collapse navbar-collapse" id="user-details">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          User unknown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a id="logout" class="dropdown-item" href="#">logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+        </nav>
+      </div>
+    <div class="container">
+        
+        <div class="row reimb-row">
+   
+            <div class="col-sm-12 content-part">
+            <!-- <div class="col-sm-3 sidebar">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active">
+                      All Request
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Pending Request</button>
+                    <button type="button" class="list-group-item list-group-item-action">All Approved</button>
+                    <button type="button" class="list-group-item list-group-item-action">Status</button>
+                    
+                  </div>
+            </div>   -->
+            <div class="col-sm-12 right-content-part-manager">
+                <div id="reimbursement" class="reimbursement">
+                    <h1 id="reimbursement-header"> Dashboard </h1>
+                    <p id="requestStatus">Status Check</p>
+                    <div class="row mb-3" id="formInfo">
+                        <label for="statusCheck" class="col-sm-2 col-form-label">Reimbursement Status</label>
+                        <div class="col-sm-6" id="reimbType">
+                            <select class="form-select" id="statusCheck">
+                                <option disabled="disabled">Choose...</option>
+                                <option value="1">Pending</option>
+                                <option value="2">Accepted</option>
+                                <option value="3">Denied</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3" id="manager-btn">
+                        <button id="submitManagerBtn" class="btn btn-success">Submit</button>
+                    </div>
+                    
+                </div> 
+            </div> 
+            </div>
+            <div class="col-sm-12">
+                <table class="table table-striped table-dark" id="table-design">
+                    <thead>
+                          <tr>
+                              <th>S/N</th>
+                              <th>Name</th>
+                              <th>Username</th>
+                              <th>Email</th>
+                              <th>Type</th>
+                              <th>Receipt</th>
+                              <th>Amount</th>
+                              <th>Date</th>
+                              <th>Status</th>
+                              <th>Resolver</th>
+                              <th>Action</th>
+                          </tr>
+                          
+                      
+                    </thead>
+                    <tbody id="table-status-data" >
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" ></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" ></script> -->
+        <script src="../js/manager.js"></script>
+</body>
+</html>
